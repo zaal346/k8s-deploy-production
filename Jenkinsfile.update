@@ -50,7 +50,7 @@ pipeline {
       }
       steps {
         container('kubectl') {
-          sh "kubectl apply -f ${env.SERVICE}-${env.VERSION}.yml"
+          sh "kubectl apply -f ${env.SERVICE}-${env.VERSION}.yml --force"
         }
       }
     }
