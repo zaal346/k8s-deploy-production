@@ -61,7 +61,7 @@ pipeline {
           script {
             def status = pushDynatraceConfigurationEvent (
               tagRule : tagMatchRules,
-              description : "Load balancing changed to: v1 ${env.VERSION1} % ; v2 ${env.VERSION2} % ; v3 ${env.VERSION3} %"",
+              description : "Load balancing changed to: v1 ${env.VERSION1} % ; v2 ${env.VERSION2} % ; v3 ${env.VERSION3} %",
               source : "Jenkins",
               configuration : "Load Balancer",
               customProperties : [
